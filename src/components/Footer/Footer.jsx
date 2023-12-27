@@ -4,7 +4,7 @@ function Footer() {
   return (
     <>
   <div className="flex flex-col min-h-screen">
-      <main className="flex-1"> {/* Add any content here */}</main>
+      <main className="flex-1"> </main>
     
       <footer className="text-center bg-gray-200 py-4 bg-white rounded-lg shadow dark:bg-gray-900 m-4">
     <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
@@ -35,11 +35,6 @@ function Footer() {
  
 
     </div>
-
-
-
-
-
 
     </>
   )
