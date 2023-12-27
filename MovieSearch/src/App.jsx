@@ -1,6 +1,5 @@
-
+import Axios from 'axios'
 import React, { useState } from 'react'
-
 import Layout from './Layout.jsx'
 import Home from './components/Home/Home.jsx'
 import About from './components/About/About.jsx'
@@ -12,18 +11,25 @@ import {Route, RouterProvider, createBrowserRouter, createRoutesFromElements} fr
  const Api_Key="8f4bfe6";
 
 function App() {
+  const [movieList,setMovieList]=useState([]);
   const [searchString,setSearchString]=useState("Hello");
-   const dataFetch= async (searchString)=>{
-      
-     try {
-      const url = `https://www.omdbapi.com/?t=${searchString}&apikey=${Api_Key}`;
-      const response= await fetch(url);
-      console.log(searchString);
-      console.log(response);
-     } catch (error) {
-      console.log(err);
-     }
-  
+   const dataFetch=(searchString)=>{
+    
+      const url =`https://www.omdbapi.com/?s=${searchString}&apikey=${Api_Key}`;
+    
+      const rsp = fetch(url).then((res)=>{
+ 
+      return res.json()
+      }
+        ).then((movies)=>{
+       setMovieList(movies.Search);
+        // console.log(movies.Search);
+      }
+      ).catch((err)=>{
+        console.log(err)
+      });
+
+
    }
   
   const dataSearching=(e)=>{
@@ -36,7 +42,7 @@ function App() {
     createRoutesFromElements(
        <Route path='/' element={<Layout inputSearch={searchString} onNavChange={dataSearching}  />} >
           
-        <Route path='' element={<Home />} />
+        <Route path='' element={<Home movies={movieList} />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/wishlist' element={<Wishlist />} />

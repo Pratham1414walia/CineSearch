@@ -6,9 +6,7 @@ import {Outlet} from 'react-router-dom'
 import React from 'react'
 
 function Layout({inputSearch,onNavChange}) {
-
   
-
   return (
     <>
      <>
@@ -79,6 +77,7 @@ className="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 r
     </nav>
     
         </>
+        
     <Outlet />
     <Footer />
    </>
