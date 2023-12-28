@@ -1,4 +1,4 @@
-import Axios from 'axios'
+
 import React, { useState } from 'react'
 import Layout from './Layout.jsx'
 import Home from './components/Home/Home.jsx'
@@ -7,6 +7,7 @@ import Contact from './components/Contact/Contact.jsx'
 import Wishlist from './components/Wishlist/Wishlist.jsx'
 
 import {Route, RouterProvider, createBrowserRouter, createRoutesFromElements} from 'react-router-dom'
+import MovieDetailPage from './components/MovieDetailPage/MovieDetailPage.jsx'
 
  const Api_Key="8f4bfe6";
 
@@ -42,12 +43,12 @@ function App() {
     createRoutesFromElements(
        <Route path='/' element={<Layout inputSearch={searchString} onNavChange={dataSearching}  />} >
           
-        <Route path='' element={<Home movies={movieList} />} />
+ <Route  path='' element={<Home movies={movieList} />}/>
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/wishlist' element={<Wishlist />} />
-        <Route path='/home' element={<Home />} />
-      
+     
+        <Route path='/:imdbID' element={<MovieDetailPage/>} />
        </Route>
   
     )

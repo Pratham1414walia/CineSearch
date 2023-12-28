@@ -1,5 +1,6 @@
 import React from 'react'
 import CardPage from '../CardPage/CardPage'
+import NoMoviesFound from '../NoMoviesFound/NoMoviesFound'
 
 function Home({movies}) {
   return (
@@ -7,12 +8,15 @@ function Home({movies}) {
       <div className="container mx-auto">
     <div className="flex flex-wrap -mx-4">
        
-
-      {
-        movies.map((movieData,index)=>{
+      {movies?.length ?(movies.map((movieData,index)=>{
          return <CardPage movieData={movieData} key={index} />
         })
 
+        ) : (
+          <>
+          <NoMoviesFound/>
+          </>
+        )
       }
 
     
