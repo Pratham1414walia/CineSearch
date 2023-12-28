@@ -10,7 +10,7 @@ function MovieDetailPage() {
    const [searchedData,setSearchData]=useState([]);
  
 
-//    to synchronize with some external system
+//useEffect    to synchronize with some external system
      useEffect(() => {
         const url=`https://www.omdbapi.com/?i=${imdbID}&apikey=${Api_Key}`
         const rsp=fetch(url).then((res)=>res.json()).then((res)=>{return setSearchData(res)}).catch((err)=>{

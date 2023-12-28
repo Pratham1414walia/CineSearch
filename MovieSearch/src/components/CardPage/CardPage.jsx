@@ -1,6 +1,5 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import MovieDetailPage from '../MovieDetailPage/MovieDetailPage';
 
 export default function CardPage(props) {
 
