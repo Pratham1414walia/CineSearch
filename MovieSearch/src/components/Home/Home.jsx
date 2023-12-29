@@ -5,8 +5,7 @@ import NoMoviesFound from '../NoMoviesFound/NoMoviesFound'
 function Home({movies}) {
   return (
    <>
-      <div className="container mx-auto">
-    <div className="flex flex-wrap -mx-4">
+      <div className="grid grid-cols-4 gap-5 pt-3">
        
       {movies?.length ?(movies.map((movieData,index)=>{
          return <CardPage movieData={movieData} key={index} />
@@ -20,7 +19,7 @@ function Home({movies}) {
       }
 
     
-    </div>
+    {/* </div> */}
   </div>
 
    </>
