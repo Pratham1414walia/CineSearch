@@ -2,12 +2,14 @@ import express from 'express'
 import cors from 'cors'
 import dotenv from 'dotenv'
 import nodemailer from 'nodemailer'
+import bodyParser from 'body-parser'
 const app=express();
 
 const port=process.env.PORT || 8000;
 dotenv.config();
 
 app.use(cors());
+app.use(bodyParser.json());
 // console.log(process.env.EMAIL_USER)
 
 
@@ -23,33 +25,33 @@ const transporter=nodemailer.createTransport({
 })
 
 
-const mailOptions={
-  from:{
-    name:'Pratham Walia',
-    address:"iit2021263@iiita.ac.in",
-  },
-  to:process.env.USER_EMAIL,
-  subject:"NODEMAILER TEsting",
-  text:"HELLO WORLD?",
- html:"<b>HELLO WORLD BY PRATHAM </b>",
-}
+app.post('/api/contact', bodyParser.urlencoded({extended:false}), (req , res)=>{
 
-transporter.sendMail(mailOptions,(err)=>{
+    const UserName=req.body.name;
+    const userEmail=req.body.email;
+    const UserMessage=req.body.message; 
+    const mailOptions={
+        from:{
+          name:`${UserName}`,
+          address:`${userEmail}`,
+        },
+        to:process.env.USER_EMAIL,
+        subject:`Feedback from ${UserName}`,
+        text:"HELLO WORLD?",
+       html:`<p>Message : ${UserMessage}</p>`,
+      }
+    
+      transporter.sendMail(mailOptions,(err)=>{
 
-    if(err){
-        console.log(err);
-    }
-    else{
-        console.log("EMAIL SEnd");
-    }
+        if(err){
+           res.json(err);
+        }
+        else{
+            res.json({code :200 ,status:"Message Sent"});
+        }
+    })
+
 })
-
-app.get('/api/contact',(req,res)=>{
-
-    res.json({message: "Hello from server"});
-})
-
-
 
 
 
