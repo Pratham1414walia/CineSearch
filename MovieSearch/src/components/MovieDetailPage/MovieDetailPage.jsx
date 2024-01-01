@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import NoMoviesFound from '../NoMoviesFound/NoMoviesFound';
 
-
+import "./MovieDetailPage.css"
 const Api_Key="8f4bfe6";
 
 function MovieDetailPage() {
@@ -23,11 +23,11 @@ function MovieDetailPage() {
     {searchedData ? (
            
 <div className="flex flex-row">
-  <div className="p-6">
-<img src={searchedData.Poster} alt=""  />
+  <div className="ImgDiv">
+<img className="MovieImg" src={searchedData.Poster} alt=""  />
 
   </div>
-  <div className="pt-5">
+  <div className="detail">
   <h1>{searchedData.Title}</h1>
   <p>Year :{searchedData.Year} </p>
     <p> Rated:{searchedData.Rated} </p>
@@ -40,6 +40,8 @@ function MovieDetailPage() {
      <p> Imdb Rating :{searchedData.imdbRating}</p> 
      <p> Awards :{searchedData.Awards}</p>
      <p>Box Office Collection :{searchedData.BoxOffice}</p>
+     <button type="submit" className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Add to Favourites</button>
+
      </div>
      </div>
   

@@ -1,26 +1,29 @@
 import React from 'react'
 import CardPage from '../CardPage/CardPage'
 import NoMoviesFound from '../NoMoviesFound/NoMoviesFound'
-
+import "./Home.css"
 function Home({movies}) {
   return (
    <>
-      <div className="grid grid-cols-4 gap-5 pt-3">
+      
+       <div className="Home">
        
-      {movies?.length ?(movies.map((movieData,index)=>{
-         return <CardPage movieData={movieData} key={index} />
-        })
-
-        ) : (
-          <>
-          <NoMoviesFound/>
-          </>
-        )
-      }
-
-    
-    {/* </div> */}
-  </div>
+       {movies?.length ?(movies.map((movieData,index)=>{
+          return <CardPage movieData={movieData} key={index} />
+         })
+ 
+         ) : (
+           <>
+           <NoMoviesFound/>
+           </>
+         )
+       }
+ 
+     
+     {/* </div> */}
+   </div>
+ 
+     
 
    </>
   )

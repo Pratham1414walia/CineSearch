@@ -2,7 +2,9 @@ import React from 'react'
 
 function NoMoviesFound() {
   return (
-    <div>NoMoviesFound</div>
+    <>
+   <div>NO movie found</div>
+</>
   )
 }
 

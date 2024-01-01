@@ -1,0 +1,16 @@
+
+.Home {
+    /* position: absolute; */
+    /* top: 0px; */
+    align-items: center;
+    display: flex;
+    flex-direction:row;
+    /* flex-grow: 10; */
+    flex-wrap: wrap;
+    justify-content: center;
+    /* flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100% */
+  }
+
+ 

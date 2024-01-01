@@ -1,0 +1,25 @@
+
+
+
+ .MovieFinder{
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+ font-size: 20px;
+ } 
+
+ .container{
+  background-image: url("./bg2.jpg");
+  /* position: relative; */
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%
+
+ }
+ .navbar{
+   border-bottom: 4px solid ;
+ }
+
+
+ .FilmLogo{
+    width: 10%;
+ }

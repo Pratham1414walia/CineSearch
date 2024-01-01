@@ -1,0 +1,40 @@
+.CardName{
+   
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    margin: 15px 0;
+    padding-left: 0.7rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  
+}
+
+.CardPage{
+    margin: 2.7rem;
+    width: 280px;
+    height: 455px;
+    background-color: white;
+    /* padding: 10px; */
+    box-shadow: 0 3px 10px 0 rgb(23, 22, 22);
+    /* cursor: pointer; */
+  }
+
+  .CardImage{
+        object-fit: cover;
+        height: 362px;
+        padding-left: 15px;
+        padding-top: 10px;
+  }
+
+.CardYear{
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 0.7rem;
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-transform: capitalize;
+    text-overflow: ellipsis;
+}
