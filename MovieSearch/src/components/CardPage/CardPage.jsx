@@ -10,15 +10,17 @@ export default function CardPage(props) {
    
 <>
   
-<Link to={`/${imdbID}`}>
-<div className="CardPage">
+
+<div className="CardContain">
    
         <img className="CardImage" src={Poster} alt={Title} />
             <div className="CardName">{Title}</div>
         <p className="CardYear">Year : {Year}</p>
-    
+        <Link to={`/${imdbID}`}>
+        <button type='button' className="button bg-primary-60">Movie Details</button>
+        </Link>
 </div>
-</Link>
+
 </>
   )
 }

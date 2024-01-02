@@ -10,9 +10,9 @@ function Wishlist() {
   return (
   <>
     
- 
+ <div className="Favourite" >Your Favourites Movies</div>
 <div className="Wishlist">
-
+  
    {movieList?.length ?(movieList.map((movieData,index)=>{
           return <WishListMovies movieData={movieData} key={index} />
          })

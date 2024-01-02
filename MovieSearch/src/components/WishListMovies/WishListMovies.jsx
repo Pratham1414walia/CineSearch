@@ -22,13 +22,13 @@ e.preventDefault();
 <>
   
 
-<div className="CardPage">
+<div className="Cardwish">
    
         <img className="CardImage" src={Poster} alt={Title} />
             <div className="CardName">{Title}</div>
         <p className="CardYear">Year : {Year}</p>
         {/* <Link to="wishlist"> */}
-       <button type='button'
+       <button type='button' className="button bg-primary-60"
        onClick={handleEvent}
         >Remove From Favourites</button>
         {/* </Link> */}
