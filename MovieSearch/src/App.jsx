@@ -9,6 +9,8 @@ import Wishlist from './components/Wishlist/Wishlist.jsx'
 import {Route, RouterProvider, createBrowserRouter, createRoutesFromElements} from 'react-router-dom'
 import MovieDetailPage from './components/MovieDetailPage/MovieDetailPage.jsx'
 
+import CardContextProvider from './context/CardContextProvider.jsx'
+
  const Api_Key="8f4bfe6";
 
 function App() {
@@ -57,7 +59,9 @@ function App() {
 
   return (
    <>
+<CardContextProvider>
      <RouterProvider router={router} />
+     </CardContextProvider>
   </>
   )
 }

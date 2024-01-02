@@ -1,0 +1,27 @@
+.Contact h2{
+    color: aliceblue;
+}
+
+.Label{
+    color: aliceblue;
+} 
+
+.Input{
+    background-color: rgba(0, 0, 0, 0.71);
+    color: aliceblue;
+}
+ ::placeholder{
+    color: rgb(238, 15, 15);
+}
+
+
+button:hover {
+  background-color: #000000; 
+  color: white; 
+
+}
+/* .button{
+    background-color: rgb(254, 13, 13);
+    background-image: none;
+} */
+/* className="Button py-3 px-5 text-sm font-medium text-center rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 " */

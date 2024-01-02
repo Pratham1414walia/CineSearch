@@ -4,11 +4,11 @@
  .MovieFinder{
   color: rgb(0, 0, 0);
   font-weight: 700;
- font-size: 20px;
+ font-size: 23px;
  } 
 
  .container{
-  background-image: url("./bg2.jpg");
+  background-image: url("./bg3.jpg");
   /* position: relative; */
   flex-shrink: 0;
   min-width: 100%;
@@ -17,6 +17,7 @@
  }
  .navbar{
    border-bottom: 4px solid ;
+   /* background-color: rgb(143, 236, 255); */
  }
 
 
