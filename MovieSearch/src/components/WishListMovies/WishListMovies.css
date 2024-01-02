@@ -16,7 +16,7 @@
     width: 280px;
     height: 520px;
    
-    background-color: rgb(107, 255, 225);
+    background-color: rgb(127, 234, 255);
     /* padding: 10px; */
     box-shadow: 0 3px 10px 0 rgb(23, 22, 22);
     /* cursor: pointer; */
@@ -40,7 +40,7 @@
     text-overflow: ellipsis;
 }
 
-.button{
+.button2{
     margin: 1rem;
     align-items: center;
     /* appearance: none; */
@@ -65,7 +65,7 @@
 }
 
 
-  .button-30:hover {
+  .button2-30:hover {
     box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(23, 22, 22) 0 -3px 0 inset;
     transform: translateY(-2px);
   }

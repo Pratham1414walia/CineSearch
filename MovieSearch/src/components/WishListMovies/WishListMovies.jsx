@@ -28,7 +28,7 @@ e.preventDefault();
             <div className="CardName">{Title}</div>
         <p className="CardYear">Year : {Year}</p>
         {/* <Link to="wishlist"> */}
-       <button type='button' className="button bg-primary-60"
+       <button type='button' className="button2 bg-primary-60"
        onClick={handleEvent}
         >Remove From Favourites</button>
         {/* </Link> */}

@@ -1,6 +1,18 @@
 
+.FullRouter{
+  margin-left: 60px;
+}
 
+.FullRouter ul li{
+  color: white;
+}
+/* .searchBar{
 
+} */
+
+.T1{
+  margin-left: 0.6%;
+}
  .MovieFinder{
   color: rgb(255, 255, 255);
   font-weight: 700;
@@ -22,5 +34,6 @@
 
 
  .FilmLogo{
-    width: 10%;
+  
+    width: 168px;
  }

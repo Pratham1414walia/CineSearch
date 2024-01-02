@@ -40,7 +40,7 @@
     text-overflow: ellipsis;
 }
 
-.button{
+.button1{
     margin: 1rem;
     width: 80%;
     align-items: center;
@@ -66,7 +66,7 @@
 }
 
 
-  .button-30:hover {
+  .button1-30:hover {
     box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgb(23, 22, 22) 0 -3px 0 inset;
     transform: translateY(-2px);
   }

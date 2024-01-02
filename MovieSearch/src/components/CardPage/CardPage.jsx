@@ -17,7 +17,7 @@ export default function CardPage(props) {
             <div className="CardName">{Title}</div>
         <p className="CardYear">Year : {Year}</p>
         <Link to={`/${imdbID}`}>
-        <button type='button' className="button bg-primary-60">Movie Details</button>
+        <button type='button' className="button1 bg-primary-60">Movie Details</button>
         </Link>
 </div>
 
