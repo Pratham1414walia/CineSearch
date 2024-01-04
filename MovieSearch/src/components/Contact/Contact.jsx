@@ -50,10 +50,10 @@ const onSubmitFrom=async(e)=>{
   return (
   <>
 {/* <section className="bg-white dark:bg-gray-900"> */}
-  <div className="Contact py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+  <div className="Contact ">
       <h2 className="mb-4 text-4xl  font-extrabold text-center">Contact Us</h2>
       
-      <form action="#" onSubmit={(e)=>onSubmitFrom(e)} className="space-y-8">
+      <form action="#" onSubmit={(e)=>onSubmitFrom(e)} className="space-y-4">
           <div>
               <label htmlFor="email" className="Label block mb-2 text-sm font-medium">Your email address</label>
               <input type="email"

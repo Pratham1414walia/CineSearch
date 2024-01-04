@@ -1,5 +1,13 @@
 .Contact h2{
     color: aliceblue;
+ 
+}
+
+.Contact{
+    /* background-color: red; */
+    width: 40%;
+    margin-top: 4%;
+    margin-left: 25%;
 }
 
 .Label{

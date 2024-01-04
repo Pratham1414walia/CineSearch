@@ -3,8 +3,8 @@ import "./Footer.css"
 function Footer() {
   return (
     <>
-  <div className="flex flex-col h-screen"> 
-     <main className="flex-1"> </main> 
+  {/* <div className="flex flex-col ">  */}
+   
     
       <footer className="Footer">
    
@@ -12,7 +12,7 @@ function Footer() {
        © 2024 MovieFinder™. All Rights Reserved.
     
 </footer>
- </div>
+ {/* </div> */}
 
     </>
   )

@@ -50,7 +50,7 @@ function MovieDetailPage() {
      <p>Box Office Collection :{searchedData.BoxOffice}</p>
 
      {btnVisible && (
-       <button type="submit"  onClick={handleEvent} className="button bg-primary-60">Add To Favourites</button>
+       <button type="submit"   onClick={handleEvent} className="buttonMDP bg-primary-40">Add To Favourites</button>
 
      )}
     

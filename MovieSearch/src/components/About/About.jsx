@@ -5,9 +5,14 @@ function About() {
   return (
     <>
     
-    <div className="aboutUs">About Us</div>
-    <div className="aContainer flex flex-row">
 
+
+
+    <div className="aboutUs flex flex-col">
+    <div className="AboutHeading">About Us</div>
+    <div className="aContainer flex flex-row">
+   
+  
     <div className="ImgContain">
         {/* <h1>Hello bro</h1> */}
         <img src="./curAbout.jpg" alt="" />
@@ -20,7 +25,7 @@ function About() {
        </div>
    
     </div>
-
+    </div>
     </>
 
 
