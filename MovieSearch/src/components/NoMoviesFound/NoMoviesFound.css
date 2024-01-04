@@ -1,0 +1,26 @@
+.ImgNoMovie{
+    width: 600px;
+height: 600px;
+/* background-color: blue; */
+margin-left: 0%;
+
+}
+
+/* .NoMovieContainer{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    border-color: black;
+    border-width: 5px;
+    width: 39%;
+    font-weight: 700;
+} */
+
+.SearchYourMovie{
+    /* text-align: center; */
+    /* background-color: rgb(255, 255, 255); */
+    color: aliceblue;
+    font-weight: 700;
+    margin-top: 2%;
+    font-size:40px;
+}

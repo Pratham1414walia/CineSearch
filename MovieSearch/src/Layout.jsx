@@ -44,7 +44,7 @@ function Layout({inputSearch,onNavChange}) {
             onNavChange(e);
 // console.log(e.target.value);
 }} 
-className="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Your">
+className="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Your Movie">
   {/* value={inputSearch} */}
 </input>
           </form>
@@ -62,16 +62,21 @@ className="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 r
       
           <ul className="FullRouter flex flex-col font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 ">
             <li>
-              <Link to="/" className="block py-2 px-3 " aria-current="page">Home</Link>
+              <Link to="/"> 
+              
+        <button type='button' className="buttonL bg-primary-60">Home</button>
+              </Link>
             </li>
             <li>
-              <Link to="about" className="block py-2 px-3">About</Link>
+              <Link to="about">
+              <button type='button' className="buttonL bg-primary-60">About</button>
+              </Link>
             </li>
             <li>
-              <Link to="wishlist" className="block py-2 px-3">Wishlist</Link>
+              <Link to="wishlist" > <button type='button' className="buttonL bg-primary-60">Favourites</button></Link>
             </li>
             <li>
-              <Link to="contact" className="block py-2 px-3 ">Contact</Link>
+              <Link to="contact" > <button type='button' className="buttonL bg-primary-60">Contact</button></Link>
             </li>
           </ul>
         </div>

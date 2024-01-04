@@ -1,6 +1,6 @@
 .detail{
     /* padding-top: 20px; */
-    color : rgb(33, 32, 32);
+    color : rgb(0, 0, 0);
     font-size: large;
     font-weight: 700;
     /* background-color: rgb(255, 255, 255); */
@@ -23,7 +23,7 @@
   margin-left: 4%;
   margin-right: 4%;
   /* background-image: url("./bg.jpg"); */
-  background-color: rgb(127, 234, 255);
+  background-color: rgba(127, 234, 255, 0.627);
 }
 .detail p{
   padding: 0.5%;

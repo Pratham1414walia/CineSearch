@@ -1,9 +1,10 @@
 .Footer{
     height: 15%;
     text-align: center;
+    background-color: #1f1b1be2;
     font-weight: 600;
     font-size: large;
-    color: aliceblue;
+    color: #00ff00;
     /* border-bottom: 5px solid; */
   border-top: 4px solid black;
 }
